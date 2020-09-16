@@ -99,8 +99,8 @@ function init()
         {
             if(intersects[0].object.name == "Cup")
             {
-                if(mode = 0) mode = 1;
-                if(mode = 1) mode = 0;
+                if(mode != 1) mode = 1;
+                else if(mode == 1) mode = 0;
                 console.log(intersects[0].object.name + "をタッチ");
                 //console.log(intersects[0].object.position);
                 //console.log(meshList[0].position);
